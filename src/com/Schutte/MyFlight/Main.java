@@ -13,7 +13,7 @@ public class Main {
         cargo.setCargo(400.0d);
         cargo.setCargo(250.0d);
         cargo.setCargo(700.0d);
-        System.out.println("Total luggage weight on Cargo Plane = "+ cargo.getTotalCargo() + "kg");
+        System.out.println("Total luggage weight on Cargo Plane = " + cargo.getTotalCargo() + "kg");
     }
 
     private static void FlightF350() {
@@ -21,7 +21,7 @@ public class Main {
         f350.setPassengers(52);
         System.out.println("Total Passengers = " + f350.passengers);
     }
-    
+
     private static void FlightF150() {
         // Ek wil add new passenger dan moet dit die passenger class call en dan (verder in passenger class)
         Passenger Bob = new Passenger(50);

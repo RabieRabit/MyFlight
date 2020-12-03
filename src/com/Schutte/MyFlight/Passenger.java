@@ -1,7 +1,7 @@
 package com.Schutte.MyFlight;
 
 public class Passenger {
-        //dis nie n method nie dis n Constuctor(as ek die naam reg onthou)
+    //dis nie n method nie dis n Constuctor(as ek die naam reg onthou)
     public Passenger(double baggage) {
         //van hier af moet dit die add1passenger method call in Flight class (kyk in flight class)
         Flight passenger = new Flight();

@@ -19,7 +19,7 @@ public class Flight {
         System.out.println("Too many");
     }
 
-    private boolean availableSeats(){
+    private boolean availableSeats() {
         return passengers < seats;
     }
 

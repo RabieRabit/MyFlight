@@ -1,7 +1,7 @@
 package com.Schutte.MyFlight;
 
 public class Cargo {
-    double TotalCargo =0.0d;
+    double TotalCargo = 0.0d;
     double maxCargo = 1000.0d;
     double Cargo;
 
@@ -20,18 +20,20 @@ public class Cargo {
         System.out.println("Too many cargo!");
     }
 
-    public boolean CargoSpace(){
-        return maxCargo>TotalCargo;
+    public boolean CargoSpace() {
+        return maxCargo > TotalCargo;
     }
 
-    public void setCargo(double Cargo){
+    public void setCargo(double Cargo) {
         this.Cargo = Cargo;
         addCargo();
     }
-    public double getTotalCargo(){
+
+    public double getTotalCargo() {
         return TotalCargo;
     }
-    public void setTotalCargo(double cargo){
+
+    public void setTotalCargo(double cargo) {
         this.TotalCargo = cargo;
 
     }

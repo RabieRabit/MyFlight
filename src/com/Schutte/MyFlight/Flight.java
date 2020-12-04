@@ -1,33 +1,46 @@
 package com.Schutte.MyFlight;
 
 public class Flight {
-    int passengers;
-    int seats = 100;
+    int totalPassengers =0;
+    int passengers =0;
+    int seats=0;
 
-    //dan moet dit 1 passenger add by die total passengers so as ek bv
-    // x3 keer se Passenger /*passenger naam*/ = new Passeneger(50) dan moet die output wees
-    // Total passengers = 3
-    // Total Cargo weight = 150kg
-    public void add1Passenger() {
-        if (availableSeats())
-            passengers += 1;
-        else
-            TooMany();
+
+    public void addPassengers(){
+        if (availableSeats()) {
+            System.out.println(passengers);
+            totalPassengers += passengers;
+            if (!availableSeats())
+                handleTooMany();
+        }
     }
 
-    public void TooMany() {
-        System.out.println("Too many");
+    private void handleTooMany() {
+        System.out.println("Too many Passengers max = "+getSeats());
     }
 
     private boolean availableSeats() {
-        return passengers < seats;
+        return totalPassengers < seats;
+    }
+
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
 
     public int getPassengers() {
         return passengers;
     }
 
+    public int getSeats(){
+        return seats;
+    }
+
+    public int getTotalPassengers(){
+        return totalPassengers;
+    }
+
     public void setPassengers(int passengers) {
         this.passengers = passengers;
+        addPassengers();
     }
 }

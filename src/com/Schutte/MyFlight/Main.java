@@ -35,7 +35,7 @@ public class Main {
         System.out.println("Total luggage = " + f350Cargo.getTotalCargo());
     }
 // Andre hier is n probleem wat ek het as ek die program rum deur method F150 dan kry ek nie die regte output nie en ek
-// kan nie optel waar dit alles verkeerd gaan nie
+// kan nie optel waar dit alles verkeerd gaan nie al die ander werk 100%
     private static void FlightF150() {
         Flight f150 = new Flight();
         Cargo cargof150 = new Cargo();
